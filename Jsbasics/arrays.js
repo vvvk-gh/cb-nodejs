@@ -39,3 +39,25 @@ console.log(fruits)
 
 fruits.shift("guvua"); //removes element from the first
 console.log(fruits);
+
+//chaning the content in the arrays
+let notes = ["sa",'re','ga','ma','pa','da','ni','sa'];
+
+console.log(`notes :${notes}`);
+console.log(`notes.slice(x) 
+notes.slice(4)
+gives you an array starting from x index position`)
+console.log(notes.slice(4));
+
+console.log(`notes.slice(x,y) 
+notes.slice(4,7)
+gives you an array starting from x index position and to before y index position it doesn't involue y positioned value`)
+console.log(notes.slice(4,5));
+
+console.log(`Slices dont change the actual array but splice does`)
+
+let splice = notes.splice(4,2); 
+console.log(notes);
+console.log(splice);
+
+console.log(`Which shows splice spiliting the original array`)
