@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fizz Buzz</title>
+</head>
+<body>
+    
+<ul id ="fzList">
+
+</ul>
+    
+    <script>
+let inputNumber = prompt("please enter a number :", " " );
+let startTime = new Date().getTime();
+let listData = "";
+for(let i =1 ; i <= inputNumber; i++){
+    let item = "";
+    if(i%3 == 0) item += "fizz";
+    if(i%5 == 0) item +="buzz";
+    if(item == "") item += i;
+    // 1 st method
+    listData += "<li>"+ item + "</li>";
+    // let listItem = document.createElement("li");
+    // listItem.innerText = item;
+    // document.getElementById("fzList").appendChild(listItem);
+}        
+document.getElementById("fzList").innerHTML = listData;
+let endTime = new Date().getTime();
+console.log(endTime - startTime);
+
+    </script>
+</body>
+</html>

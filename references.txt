@@ -1,0 +1,17 @@
+Day 1 
+----------
+Webinar :
+https://www.youtube.com/watch?v=mFbitwLUCRs
+
+References :
+JavaScript:
+https://developer.mozilla.org/en-US/
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
+
+Videos :
+JavaScript basics
+
+https://www.youtube.com/watch?v=qGQmj86A3q4&list=PLl4Y2XuUavmu--cWPkYUjx2C8A52fZ689
+
+Webinar :
+introduction to JavaScript : 

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Todo</title>
+</head>
+<body>
+    <input type = "text" id="textbox"/>
+    <button id="addbutton">Add</button>
+    <ul id="list">
+    
+    </ul>
+    
+    <script>
+        let addButton = document.getElementById("addbutton");
+        let textBox = document.getElementById("textbox");
+        let resultList = document.getElementById("list");
+        let startTime = new Date().getTime();
+        
+        addButton.onclick = function(){
+            let item = textBox.value;
+            let listItem = document.createElement('li');
+            listItem.innerText = item;
+            resultList.appendChild(listItem);
+
+        }
+        let endTime = new Date().getTime();
+        console.log(endTime - startTime);
+    </script>
+</body>
+</html>
