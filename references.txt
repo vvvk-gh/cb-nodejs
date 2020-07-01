@@ -13,5 +13,6 @@ JavaScript basics
 
 https://www.youtube.com/watch?v=qGQmj86A3q4&list=PLl4Y2XuUavmu--cWPkYUjx2C8A52fZ689
 
-Webinar :
-introduction to JavaScript : 
+Playcode.io :
+https://playcode.io/629345/
+https://playcode.io/629356/
