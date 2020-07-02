@@ -56,8 +56,15 @@ console.log(notes.slice(4,5));
 
 console.log(`Slices dont change the actual array but splice does`)
 
+//splice effects the original value
 let splice = notes.splice(4,2); 
 console.log(notes);
 console.log(splice);
 
 console.log(`Which shows splice spiliting the original array`)
+
+//join 
+console.log(notes.join('-'));
+
+//concat 
+console.log(notes.concat(splice));
