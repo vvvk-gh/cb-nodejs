@@ -30,7 +30,7 @@ function doSomething () {
      z +=1;
     console.log("inside function : " +z); //4
     if(true){
-        var z = 30;
+        var z = 30;  // var z =30 is same as z =30 inside if block as var doesn't support if block
         z += 10;
         console.log("inside if block : "+z); //40
     }
