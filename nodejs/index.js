@@ -21,11 +21,11 @@ Second Program : Writing into a file, specified directory
 
 Third Program : Read a file, specified directory
 
-|=============|==================|
-|Files used   |  Executable      |
-|=============|==================|
-|fileWrite.js | fileWrite.js     |
-|=============|==================|
+|==================|==================|
+|Files used        | Executable       |
+|==================|==================|
+|FileRead.js       | fileRead.js      |
+|==================|==================|
 
 
 `);
