@@ -36,9 +36,16 @@ app.post('/greet' , (req, res) => {
     res.send('Good Evening' +" "+person)
 })
 
+//urlpath params
 
+// app.get('/:city/:greet' , (req ,res) =>{
+//     res.send(req.params.greet +" to the "+req.params.city)
+// })
 
-
+//note no 2 url params of same pattern should not exist as the first one with the same pattern gets executed so tale care of it 
+app.get('/:person/:club' , (req ,res) =>{
+    res.send("Thank you " +req.params.person +" for joining our "+req.params.club+" club ");
+})
 
 app.listen('4444' , ()=>{
     console.log("listenting on port : localhost:4444")
