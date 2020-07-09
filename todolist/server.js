@@ -3,7 +3,13 @@ const app = express();
 
 app.use(express.urlencoded({extented:true}))
 
+let tasks =[
+    'simple random task'
+]
+
 app.get('/' , (req, res)=>{
+
+    let taskList = tasks.map((t) => `<li>${t}</li>`)
     res.send(`
     <html>
         <body>
@@ -12,7 +18,7 @@ app.get('/' , (req, res)=>{
             <button type="submit">Add</button>
             </form>
             <ul>
-                <li>Some Random Data</li>
+                ${taskList.join('')}
             </ul>
         </body>
     </html>
@@ -21,7 +27,9 @@ app.get('/' , (req, res)=>{
 
 
 app.post("/" , (req, res)=>{
-res.send("New task = " + req.body.newtask);
+    tasks.push(req.body.newtask)
+    res.redirect('/')
+
 })
 
 app.listen('5555', ()=>{
