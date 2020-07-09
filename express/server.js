@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 
+app.use(express.urlencoded({extended:true})) //this makes req.body accessible or else it will be undefined in app.post method
 app.get('/' , (req, res) => {
     res.send('<h1 style="color:red;">Hello World</h1>')
 })
@@ -28,11 +29,11 @@ app.get('/form' , (req, res) => {
 
 app.post('/greet' , (req, res) => {
     let person = 'Guest';
-    if(req.query.person){   //add ?person = <some_Random_Name> to the end of the url in the browser
-     person = req.query.person
+    if(req.body.person){   
+     person = req.body.person
     }
         console.log(req.body)
-    res.send('Good Morning' +" "+person)
+    res.send('Good Evening' +" "+person)
 })
 
 
