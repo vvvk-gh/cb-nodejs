@@ -23,6 +23,18 @@ app.get('/form' , (req, res) => {
     res.sendFile(__dirname + '/files/form.html')
 })
 
+//post method
+//when we use method post in form action values goes into the body and not like get method (which goes into the query)
+
+app.post('/greet' , (req, res) => {
+    let person = 'Guest';
+    if(req.query.person){   //add ?person = <some_Random_Name> to the end of the url in the browser
+     person = req.query.person
+    }
+        console.log(req.body)
+    res.send('Good Morning' +" "+person)
+})
+
 
 
 
