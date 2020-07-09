@@ -27,5 +27,17 @@ Third Program : Read a file, specified directory
 |FileRead.js       | fileRead.js      |
 |==================|==================|
 
+Assignment : read and write into the file and count duplicates
+
+|===========================|==================|
+|Files used                 |  Executable      |
+|===========================|==================|
+|r_w_assignment/readFile.js |                  |
+|===========================|  readFile.js     |
+| input :readfromfile       |                  |
+|===========================|                  |
+| ouput: writehere.txt      |                  |
+|===========================|==================|
+
 
 `);
