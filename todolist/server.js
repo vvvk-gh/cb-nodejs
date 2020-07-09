@@ -18,7 +18,7 @@ app.get('/' , (req, res)=>{
             <button type="submit">Add</button>
             </form>
             <ul>
-                ${taskList.join('')}
+                ${taskList.join('\n')}
             </ul>
         </body>
     </html>
