@@ -15,5 +15,4 @@ console.log(resArray);
     fs.writeFile(__dirname + "/writehere.txt" , resArray , (err) =>{
             if (err) throw err
             console.log("copied into the file")
-            
         })
