@@ -1,0 +1,3 @@
+Its is a todo list made using the following
+Front end - yes html, but it triggers from the server so can be considered as nothing 
+Backend - express and it renders the html from hbs (handlebars)
