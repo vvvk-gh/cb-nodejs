@@ -21,3 +21,7 @@ https://playcode.io/629356/
 Async , callbacks and promises :
 
 https://www.youtube.com/watch?v=7oQ102fYv6g&list=PLl4Y2XuUavmvrxDddWW8W0nhm83v6iAXd
+
+
+To know about handlebars
+refer : handlebars.txt in todolist folder
