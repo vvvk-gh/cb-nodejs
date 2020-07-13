@@ -1,43 +1,17 @@
-const express = require('express');
+const express = require('express')
 const app = express()
-const db = require('./db')
-
-app.set("view engine" , "hbs")
+const path = require('path')
 
 app.use(express.json())
-app.use(express.urlencoded({extended:true}))
+app.use(express.urlencoded({extended: true}))
 
-app.get('/' , (req, res)=>{
+app.set("view engine", "hbs")
 
-    db.getAllPersons()
-        .then((persons)=>{
-                res.render('persons', {
-                        persons ,
-                        title :'Add Persons Page'
-                        })
-        })
-        .catch((err)=>{
-                res.send(err);
-        })
-})
-
-app.get('/add' , (req , res)=>{
-    res.render('add_persons', {
-            title : 'Add Persons'
-    });
-})
+app.use('/pages', require('./routes/pages').route)
+app.use('/api', require('./routes/api').route)
+app.use('/', express.static(path.join(__dirname, 'public_static')))
 
 
-app.post('/add' , (req , res)=>{
-    db.addNewPersons(req.body.name , req.body.age , req.body.city)
-        .then(()=>{
-            res.redirect("/")
-        })
-        .catch(()=>{
-
-        })
-});
-
-app.listen('5554', ()=>{
-    console.log(`App listening at http://localhost:5554/`);
+app.listen(4444, () => {
+    console.log("Server started on http://localhost:4444/")
 })
