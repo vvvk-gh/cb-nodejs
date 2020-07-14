@@ -17,7 +17,7 @@
 
 CREATE USER sampleuser1 IDENTIFIED BY 'samplepass1';
 GRANT ALL PRIVILEGES ON `sampledb1`.* TO 'sampleuser1'@'localhost';
-FLUSH PRIVILEGES;
+//FLUSH PRIVILEGES;
 exit
 
 ```
