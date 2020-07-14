@@ -20,7 +20,6 @@ const Student = db.define('student' , {
     name : {
         type : Datatypes.STRING(40),
         allowNull : false,
-
     },
     age: {
         type :Datatypes.INTEGER(2),

@@ -12,14 +12,14 @@ const db = new Sequelize ('sampledb1', 'sampleuser1' , 'samplepass1' , {
 
 //model : defining the schema
 
-const Student = db.define('student', {
+const Student = db.define('students', {
     name :{
         type : DataType.STRING(40),
-        allowNull:false,
+        allowNull : false
     },
     age:{
         type: DataType.INTEGER(2),
-        allowNull:false,
+        allowNull: false,
         defaultValue: -1
     }
 })
