@@ -88,8 +88,12 @@ Batch.belongsTo(Season)
 Course.hasMany(Batch)
 Season.hasMany(Batch)
 Center.hasMany(Batch)
-
 //syncing
 db.sync({alter:true})
     .then(()=> console.log('Database Synchronized'))
     .catch((E)=> console.log(E))
+
+
+exports = module.exports = {
+ db, Center , Season , Teacher ,  Course , Batch
+}
