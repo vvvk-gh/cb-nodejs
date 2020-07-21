@@ -11,7 +11,6 @@ const DB_NAME = "tododb";
 
 //async IIFE
 (async ()=> {
-
     const client = await MongoClient.connect(MongoUrl);
 
     const tododb = client.db(DB_NAME)
